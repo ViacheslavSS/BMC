@@ -8,7 +8,8 @@ public class Passenger {
 	public String fromDate;
 	public String toDate;
 	public int ticketAmount;
-	public Passenger(String firstName,String lastName,String fromDist,String toDist,String fromDate,String toDate,int ticketAmount){
+	public String passengerType;
+	public Passenger(String firstName,String lastName,String fromDist,String toDist,String fromDate,String toDate,int ticketAmount,String passengerType){
 		this.firstName=firstName;
 		this.lastName=lastName;
 		this. fromDist=fromDist;
@@ -16,6 +17,7 @@ public class Passenger {
 		this.fromDate=fromDate;
 		this.toDate=toDate;
 		this.ticketAmount=ticketAmount;
+		this.passengerType=passengerType;
 		
 		
 	}

@@ -10,6 +10,8 @@ import org.testng.Reporter;
 public class TestBase {
 	 protected static WebDriver driver;
 	String URL = "https://www.elal.com/en/Israel/Pages/default.aspx";
+	String FromDate = "12/10/2018";
+	String ToDate= "15/10/2018";
 	 
 
 	public static WebDriver startBrowser(String browserName,String url){

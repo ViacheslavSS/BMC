@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
     <line>
       <![CDATA[====Start browser====]]>
+    </line>
+    <line>
+      <![CDATA[======Stop browser======]]>
+    </line>
+    <line>
+      <![CDATA[====Start browser====]]>
+    </line>
+    <line>
+      <![CDATA[======Stop browser======]]>
+    </line>
+    <line>
+      <![CDATA[====Start browser====]]>
+    </line>
+    <line>
+      <![CDATA[======Stop browser======]]>
+    </line>
+    <line>
+      <![CDATA[====Start browser====]]>
+    </line>
+    <line>
+      <![CDATA[======Stop browser======]]>
     </line>
     <line>
       <![CDATA[====Start browser====]]>
@@ -11,19 +32,12 @@
       <![CDATA[======Stop browser======]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36645" started-at="2018-10-12T12:59:28Z" finished-at="2018-10-12T13:00:04Z">
+  <suite name="Default suite" duration-ms="86530" started-at="2018-10-12T19:44:20Z" finished-at="2018-10-12T19:45:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36645" started-at="2018-10-12T12:59:28Z" finished-at="2018-10-12T13:00:04Z">
-      <class name="com.elal.test.TestSearchingTickets">
-        <test-method status="PASS" signature="testAddOneAdult()[pri:1, instance:com.elal.test.TestSearchingTickets@523884b2]" name="testAddOneAdult" duration-ms="18431" started-at="2018-10-12T12:59:28Z" description="Precondition:Passengers amount is 1**The goal of the test is to check adding one adult to ticket:Expected results Passengers amount is updated to 2" finished-at="2018-10-12T12:59:46Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====Start browser====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testAddOneAdult -->
-        <test-method status="PASS" signature="testAdd8Adults()[pri:2, instance:com.elal.test.TestSearchingTickets@523884b2]" name="testAdd8Adults" duration-ms="18189" started-at="2018-10-12T12:59:46Z" description=" Precondition:Passengers amount is 2**The goal of the test is to check adding 8 adults to ticket:Expected results Passengers amount is updated to 9 (Max amount!!)" finished-at="2018-10-12T13:00:04Z">
+    <test name="Default test" duration-ms="86530" started-at="2018-10-12T19:44:20Z" finished-at="2018-10-12T19:45:47Z">
+      <class name="com.elal.test.AddingRemovingPassengers">
+        <test-method status="PASS" signature="testAddOneAdult()[pri:1, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testAddOneAdult" duration-ms="19688" started-at="2018-10-12T19:44:20Z" description="TC1**The goal of the test is to check adding one adult to ticket:Expected results Passengers amount is updated to 2**" finished-at="2018-10-12T19:44:40Z">
           <reporter-output>
             <line>
               <![CDATA[====Start browser====]]>
@@ -32,8 +46,48 @@
               <![CDATA[======Stop browser======]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testAdd8Adults -->
-      </class> <!-- com.elal.test.TestSearchingTickets -->
+        </test-method> <!-- testAddOneAdult -->
+        <test-method status="PASS" signature="testAdd5Adults()[pri:2, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testAdd5Adults" duration-ms="18564" started-at="2018-10-12T19:44:40Z" description="TC2**The goal of the test is to check adding 4 adults to ticket:Expected results Passengers amount is updated to 5" finished-at="2018-10-12T19:44:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[====Start browser====]]>
+            </line>
+            <line>
+              <![CDATA[======Stop browser======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAdd5Adults -->
+        <test-method status="PASS" signature="testAdd9Adults()[pri:3, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testAdd9Adults" duration-ms="18258" started-at="2018-10-12T19:44:58Z" description="TC3**The goal of the test is to check adding 9 adults to ticket:Expected results**Error message shown,Max adulst is 9" finished-at="2018-10-12T19:45:17Z">
+          <reporter-output>
+            <line>
+              <![CDATA[====Start browser====]]>
+            </line>
+            <line>
+              <![CDATA[======Stop browser======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAdd9Adults -->
+        <test-method status="PASS" signature="testRemoveAllAdults()[pri:5, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testRemoveAllAdults" duration-ms="10050" started-at="2018-10-12T19:45:17Z" description="TC5**The goal of the test is to check remove all adults from a  ticket:Expected results**Error message shown,Choose Adult Tickets" finished-at="2018-10-12T19:45:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[====Start browser====]]>
+            </line>
+            <line>
+              <![CDATA[======Stop browser======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testRemoveAllAdults -->
+        <test-method status="PASS" signature="testaddAdult_Children()[pri:6, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testaddAdult_Children" duration-ms="19944" started-at="2018-10-12T19:45:27Z" description="TC6**The goal of the test is to check adding to  adults some amount of children,Total amount of children and Adults should be less than 9" finished-at="2018-10-12T19:45:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[====Start browser====]]>
+            </line>
+            <line>
+              <![CDATA[======Stop browser======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testaddAdult_Children -->
+      </class> <!-- com.elal.test.AddingRemovingPassengers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
