@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[====Start browser====]]>
+    </line>
+    <line>
+      <![CDATA[====Start browser====]]>
+    </line>
+    <line>
+      <![CDATA[======Stop browser======]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36645" started-at="2018-10-12T12:59:28Z" finished-at="2018-10-12T13:00:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36645" started-at="2018-10-12T12:59:28Z" finished-at="2018-10-12T13:00:04Z">
+      <class name="com.elal.test.TestSearchingTickets">
+        <test-method status="PASS" signature="testAddOneAdult()[pri:1, instance:com.elal.test.TestSearchingTickets@523884b2]" name="testAddOneAdult" duration-ms="18431" started-at="2018-10-12T12:59:28Z" description="Precondition:Passengers amount is 1**The goal of the test is to check adding one adult to ticket:Expected results Passengers amount is updated to 2" finished-at="2018-10-12T12:59:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[====Start browser====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAddOneAdult -->
+        <test-method status="PASS" signature="testAdd8Adults()[pri:2, instance:com.elal.test.TestSearchingTickets@523884b2]" name="testAdd8Adults" duration-ms="18189" started-at="2018-10-12T12:59:46Z" description=" Precondition:Passengers amount is 2**The goal of the test is to check adding 8 adults to ticket:Expected results Passengers amount is updated to 9 (Max amount!!)" finished-at="2018-10-12T13:00:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[====Start browser====]]>
+            </line>
+            <line>
+              <![CDATA[======Stop browser======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAdd8Adults -->
+      </class> <!-- com.elal.test.TestSearchingTickets -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
