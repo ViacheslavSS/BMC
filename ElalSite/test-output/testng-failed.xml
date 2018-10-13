@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.elal.test.SearchingByDefferentDestinations">
+      <class name="com.elal.test.AddingRemovingPassengers">
         <methods>
-          <include name="originAndDestinationAreNotMatched"/>
+          <include name="testRemove3Adults"/>
+          <include name="testAdd9Adults"/>
+          <include name="testAddOneAdult"/>
+          <include name="testAdd5Adults"/>
+          <include name="testaddAdult_Children"/>
         </methods>
-      </class> <!-- com.elal.test.SearchingByDefferentDestinations -->
+      </class> <!-- com.elal.test.AddingRemovingPassengers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Slava\AppData\Local\Temp\testng-eclipse--345939772\testng-customsuite.xml</span>
+                    <span>C:\Users\Slava\AppData\Local\Temp\testng-eclipse--1542160585\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,37 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.SearchingByDefferentDestinations" hash-for-method="originAndDestinationAreNotMatched">originAndDestinationAreNotMatched</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testAdd5Adults">testAdd5Adults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testAdd9Adults">testAdd9Adults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testAddOneAdult">testAddOneAdult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testOneAdult9Children">testOneAdult9Children</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testRemove3Adults">testRemove3Adults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testRemoveAllAdults">testRemoveAllAdults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.elal.test.AddingRemovingPassengers" hash-for-method="testaddAdult_Children">testaddAdult_Children</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,16 +150,70 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.elal.test.SearchingByDefferentDestinations</span>
+              <span class="class-name">com.elal.test.AddingRemovingPassengers</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="originAndDestinationAreNotMatched">
-                  </a> <!-- originAndDestinationAreNotMatched -->
-                  <span class="method-name">originAndDestinationAreNotMatched</span>
+                  <a name="testAdd5Adults">
+                  </a> <!-- testAdd5Adults -->
+                  <span class="method-name">testAdd5Adults</span>
                   <em>
-(The goal of the test is to check tickets when Origin and Destanation are not matched and type of trip is **Round**Expected resul:Should be shown Outbound and Inbound according with entered directions)                  </em>
+(TC2**The goal of the test is to check adding 4 adults to ticket:Expected results Passengers amount is updated to 5)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd9Adults">
+                  </a> <!-- testAdd9Adults -->
+                  <span class="method-name">testAdd9Adults</span>
+                  <em>
+(TC3**The goal of the test is to check adding 9 adults to ticket:Expected results**Error message shown,Max adulst is 9)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddOneAdult">
+                  </a> <!-- testAddOneAdult -->
+                  <span class="method-name">testAddOneAdult</span>
+                  <em>
+(TC1**The goal of the test is to check adding one adult to ticket,By default there is one adult added once site is open:Expected results Passengers amount is updated to 2**)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOneAdult9Children">
+                  </a> <!-- testOneAdult9Children -->
+                  <span class="method-name">testOneAdult9Children</span>
+                  <em>
+(The goal of the test is to check apearing error message when total amount of passangers Adults and Children is greater than 9)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemove3Adults">
+                  </a> <!-- testRemove3Adults -->
+                  <span class="method-name">testRemove3Adults</span>
+                  <em>
+(TC4**The goal of the test is to check removing of 3 adults from a  ticket:Before will be add 4 adults and then remove 1Expected results Passengers amount is updated to 4)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveAllAdults">
+                  </a> <!-- testRemoveAllAdults -->
+                  <span class="method-name">testRemoveAllAdults</span>
+                  <em>
+(TC5**The goal of the test is to check remove all adults from a  ticket:Expected results**Error message shown,Choose Adult Tickets)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testaddAdult_Children">
+                  </a> <!-- testaddAdult_Children -->
+                  <span class="method-name">testaddAdult_Children</span>
+                  <em>
+(TC6**The goal of the test is to check adding to  adults 2 children,Total amount of children and Adults should 7)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +221,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Slava\AppData\Local\Temp\testng-eclipse--345939772\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Slava\AppData\Local\Temp\testng-eclipse--1542160585\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +230,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.elal.test.SearchingByDefferentDestinations&quot;/&gt;
+      &lt;class name=&quot;com.elal.test.AddingRemovingPassengers&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +270,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'originAndDestinationAreNotMatched')
-data.setCell(0, 2, 'com.elal.test.SearchingByDefferentDestinations')
-data.setCell(0, 3, 21028);
+data.setCell(0, 1, 'testaddAdult_Children')
+data.setCell(0, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(0, 3, 19738);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddOneAdult')
+data.setCell(1, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(1, 3, 18881);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testRemove3Adults')
+data.setCell(2, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(2, 3, 18430);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAdd9Adults')
+data.setCell(3, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(3, 3, 18387);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAdd5Adults')
+data.setCell(4, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(4, 3, 18117);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testOneAdult9Children')
+data.setCell(5, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(5, 3, 14164);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testRemoveAllAdults')
+data.setCell(6, 2, 'com.elal.test.AddingRemovingPassengers')
+data.setCell(6, 3, 10032);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -207,7 +315,49 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">originAndDestinationAreNotMatched</span>
+              <span class="reporter-method-name">testAddOneAdult</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">====Start browser====</span>
+                <span class="reporter-method-output">======Stop browser======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAdd9Adults</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">====Start browser====</span>
+                <span class="reporter-method-output">======Stop browser======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRemove3Adults</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">====Start browser====</span>
+                <span class="reporter-method-output">======Stop browser======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testOneAdult9Children</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">====Start browser====</span>
+                <span class="reporter-method-output">======Stop browser======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testaddAdult_Children</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">====Start browser====</span>
+                <span class="reporter-method-output">======Stop browser======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAdd5Adults</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">====Start browser====</span>
+                <span class="reporter-method-output">======Stop browser======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testRemoveAllAdults</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">====Start browser====</span>
                 <span class="reporter-method-output">======Stop browser======</span>
@@ -228,10 +378,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.elal.test.SearchingByDefferentDestinations</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.elal.test.AddingRemovingPassengers</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">originAndDestinationAreNotMatched</span>
+                <span class="method-name">testOneAdult9Children</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddOneAdult</span>
+                <span class="method-start">14166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAdd5Adults</span>
+                <span class="method-start">33048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAdd9Adults</span>
+                <span class="method-start">51166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemove3Adults</span>
+                <span class="method-start">69554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemoveAllAdults</span>
+                <span class="method-start">87985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddAdult_Children</span>
+                <span class="method-start">98018 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
