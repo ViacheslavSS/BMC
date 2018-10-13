@@ -48,9 +48,20 @@ public class HomePage extends TestBase {
 	WebElement remChild;
 	@FindBy(xpath = "//div[@id='WebPartWPQ1']//div[2]/div[2]/div[8]//div[2]/div[2]/div[3]/div[2]/button[2]")
 	WebElement addChild;
+	@FindBy(className = "maxAdultsError")
+	WebElement maxAdultsErrorMsg;
 
-	public String getErrorMsg() {
-		return noAdultsErrorMsg.getText().toString();
+
+	public String getErrorMsg(String errorType) {
+
+		if (errorType == "maxAdultsErrorMsg") {
+			return maxAdultsErrorMsg.getText().toString();
+
+		} else if (errorType == "noAdultsErrorMsg") {
+			return noAdultsErrorMsg.getText().toString();
+
+		}
+		return "";
 
 	}
 
@@ -332,8 +343,10 @@ public class HomePage extends TestBase {
 	public void getChild() {
 		String number = childrenAmount.getText();
 		int amount = Integer.parseInt(number);
-		//Global.adultsAmount = amount;
+		// Global.adultsAmount = amount;
 		Global.childAmount = amount;
 
 	}
+
+	
 }

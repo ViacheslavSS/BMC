@@ -2,6 +2,8 @@ package com.elal.test;
 
 import static org.testng.Assert.assertEquals;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
@@ -13,19 +15,24 @@ import com.pages.HomePage;
 import com.pages.ReservesionPage;
 
 public class AddingRemovingPassengers extends TestBase {
+//**************	Searching and booking by different kind of passengers**********
 
 	// **************************************************************************************************************************************************************
-	@Test(description = "TC1**The goal of the test is to check adding one adult to ticket:Expected results Passengers amount is updated to 2**", priority = 1, enabled = true)
+	@Test(description = "TC1**The goal of the test is to check adding one adult to ticket,"
+			+ "By default there is one adult added once site is open"
+			+ ":Expected results Passengers amount is updated to 2**", priority = 1, enabled = false)
 	public void testAddOneAdult()
 
 	{
-
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 1,"adult");
+		
+		
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 1,
+				"adult");
 		ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
 		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
-		 hompage.fillSearchingForm(passenger);
-		 reservesionPage= hompage.selectTypeOfPassenger(passenger,"add");
+		hompage.fillSearchingForm(passenger);
+		reservesionPage = hompage.selectTypeOfPassenger(passenger, "add");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		hompage.submit();
 		assertEquals(reservesionPage.getNumOfPass(), Global.adultsAmount);
@@ -34,16 +41,18 @@ public class AddingRemovingPassengers extends TestBase {
 	}
 
 	// **************************************************************************************************************************************************************
-	@Test(description = "TC2**The goal of the test is to check adding 4 adults to ticket:Expected results Passengers amount is updated to 5", priority = 2, enabled = true)
+	@Test(description = "TC2**The goal of the test is to check adding 4 adults to ticket"
+			+ ":Expected results Passengers amount is updated to 5", priority = 2, enabled = false)
 	public void testAdd5Adults()
 
 	{
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 4,"adult");
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 4,
+				"adult");
 		ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
 		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
-		 hompage.fillSearchingForm(passenger);
-		 reservesionPage= hompage.selectTypeOfPassenger(passenger,"add");
+		hompage.fillSearchingForm(passenger);
+		reservesionPage = hompage.selectTypeOfPassenger(passenger, "add");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		hompage.submit();
 		assertEquals(reservesionPage.getNumOfPass(), Global.adultsAmount);
@@ -51,17 +60,19 @@ public class AddingRemovingPassengers extends TestBase {
 	}
 
 	// **************************************************************************************************************************************************************
-	@Test(description = "TC3**The goal of the test is to check adding 9 adults to ticket:Expected results**Error message shown,Max adulst is 9", priority = 3, enabled = true)
+	@Test(description = "TC3**The goal of the test is to check adding 9 adults to ticket:Expected results"
+			+ "**Error message shown,Max adulst is 9", priority = 3, enabled = false)
 	public void testAdd9Adults()
 
 	{
 
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 8,"adult");
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 8,
+				"adult");
 		ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
 		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
-		 hompage.fillSearchingForm(passenger);
-		 reservesionPage= hompage.selectTypeOfPassenger(passenger,"add");
+		hompage.fillSearchingForm(passenger);
+		reservesionPage = hompage.selectTypeOfPassenger(passenger, "add");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		hompage.submit();
 		assertEquals(reservesionPage.getNumOfPass(), Global.adultsAmount);
@@ -75,13 +86,15 @@ public class AddingRemovingPassengers extends TestBase {
 	public void testRemove3Adults()
 
 	{
-		//Adults adult = new Adults("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 3);
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 3,"adult");
+		// Adults adult = new Adults("Slava", "Starusev", "Tel", "Moscow",
+		// "12/10/2018", "16/10/2018", 3);
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 3,
+				"adult");
 		ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
 		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
-		 hompage.fillSearchingForm(passenger);
-		 reservesionPage= hompage.selectTypeOfPassenger(passenger,"add");
+		hompage.fillSearchingForm(passenger);
+		reservesionPage = hompage.selectTypeOfPassenger(passenger, "add");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		hompage.submit();
 		assertEquals(reservesionPage.getNumOfPass(), Global.adultsAmount);
@@ -89,43 +102,66 @@ public class AddingRemovingPassengers extends TestBase {
 	}
 
 	// ***************************************************************************************************************************************************************
-	@Test(description = "TC5**The goal of the test is to check remove all adults from a  ticket:Expected results**Error message shown,Choose Adult Tickets", priority = 5, enabled = true)
+	@Test(description = "TC5**The goal of the test is to check remove all adults from a  ticket:Expected results**Error message shown,"
+			+ "Choose Adult Tickets", priority = 5, enabled = false)
 	public void testRemoveAllAdults()
 
 	{
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 1,"adult");
-		//ReservesionPage reservesionPage;
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 1,
+				"adult");
+		// ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
 		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
 		hompage.fillSearchingForm(passenger);
-		 hompage.selectTypeOfPassenger(passenger,"del");
+		hompage.selectTypeOfPassenger(passenger, "del");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//hompage.submit();
-		assertEquals(hompage.getErrorMsg(), "Choose Adult Tickets");
+		// hompage.submit();
+		assertEquals(hompage.getErrorMsg("noAdultsErrorMsg"), "Choose Adult Tickets");
 		tearDown();
 	}
 
 	// ********************************************************************************************************************************************************************
-	@Test(description = "TC6**The goal of the test is to check adding to  adults some amount of children,Total amount of children "
-			+ "and Adults should be less than 9", priority = 6, enabled = true)
+	@Test(description = "TC6**The goal of the test is to check adding to  adults 2 children,Total amount of children "
+			+ "and Adults should 7", priority = 6, enabled = false)
 	public void testaddAdult_Children()
 
 	{
 
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 4,"adult");
-		Passenger passenger1 = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 2,"child");
-		//Passenger child = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 4,"child");
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 4,
+				"adult");
+		Passenger passenger1 = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 2,
+				"child");
+		// Passenger child = new Passenger("Slava", "Starusev", "Tel", "Moscow",
+		// "12/10/2018", "16/10/2018", 4,"child");
 		ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
 		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
-		 hompage.fillSearchingForm(passenger);
-		 reservesionPage=hompage.selectTypeOfPassenger(passenger,"add");
-		 reservesionPage=hompage.selectTypeOfPassenger(passenger1,"add");
+		hompage.fillSearchingForm(passenger);
+		reservesionPage = hompage.selectTypeOfPassenger(passenger, "add");
+		reservesionPage = hompage.selectTypeOfPassenger(passenger1, "add");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		hompage.submit();
-		assertEquals(reservesionPage.getNumOfPass(), Global.adultsAmount+Global.childAmount);
+		assertEquals(reservesionPage.getNumOfPass(), Global.adultsAmount + Global.childAmount);
 
 		tearDown();
 	}
+
 	// ********************************************************************************************************************************************************************
+	@Test(description = "The goal of the test is to check apearing error message when total amount of passangers Adults and Children is greater than 9", enabled = true)
+	public void testOneAdult9Children() {
+
+		Passenger adult = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 1, "adult");
+		Passenger child = new Passenger("Slava", "Starusev", "Tel", "Moscow", "12/10/2018", "16/10/2018", 8, "child");
+		// ReservesionPage reservesionPage;
+		startBrowser("Chrome", URL);
+		HomePage hompage = PageFactory.initElements(driver, HomePage.class);
+		hompage.fillSearchingForm(adult);
+		hompage.selectTypeOfPassenger(adult, "add");
+		hompage.selectTypeOfPassenger(child, "add");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		hompage.submit();
+		assertEquals(hompage.getErrorMsg("maxAdultsErrorMsg"), "Max Adult Tickets Num Is 9");
+		tearDown();
+	}
+
 }
