@@ -19,14 +19,9 @@ public class SearchingByDefferentDestinations extends TestBase {
 			+ "Expected resul:Should be shown Outbound and Inbound according with entered directions",enabled=true,priority=1)
 	public void originAndDestinationAreNotMatched(){
 		
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-	
-		LocalDate localDate = LocalDate.now();
-	
-		String local=localDate.toString();
-		System.out.println(dtf.format(localDate)); //2016/11/16
 		
-		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Lond", local, "16/10/2018", 1,
+
+		Passenger passenger = new Passenger("Slava", "Starusev", "Tel", "Lond", FromDate, ToDate, 1,
 				"adult");
 		ReservesionPage reservesionPage;
 		startBrowser("Chrome", URL);
