@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[====Start browser====]]>
@@ -19,37 +19,25 @@
     <line>
       <![CDATA[======Stop browser======]]>
     </line>
-    <line>
-      <![CDATA[====Start browser====]]>
-    </line>
-    <line>
-      <![CDATA[======Stop browser======]]>
-    </line>
-    <line>
-      <![CDATA[====Start browser====]]>
-    </line>
-    <line>
-      <![CDATA[======Stop browser======]]>
-    </line>
-    <line>
-      <![CDATA[====Start browser====]]>
-    </line>
-    <line>
-      <![CDATA[======Stop browser======]]>
-    </line>
-    <line>
-      <![CDATA[====Start browser====]]>
-    </line>
-    <line>
-      <![CDATA[======Stop browser======]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="115642" started-at="2018-10-20T09:10:06Z" finished-at="2018-10-20T09:12:02Z">
+  <suite name="Default suite" duration-ms="53565" started-at="2018-10-20T11:35:10Z" finished-at="2018-10-20T11:36:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="115642" started-at="2018-10-20T09:10:06Z" finished-at="2018-10-20T09:12:02Z">
-      <class name="com.elal.test.AddingRemovingPassengers">
-        <test-method status="PASS" signature="testOneAdult9Children()[pri:0, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testOneAdult9Children" duration-ms="12703" started-at="2018-10-20T09:10:06Z" description="The goal of the test is to check apearing error message when total amount of passangers Adults and Children is greater than 9" finished-at="2018-10-20T09:10:19Z">
+    <test name="Default test" duration-ms="53565" started-at="2018-10-20T11:35:10Z" finished-at="2018-10-20T11:36:04Z">
+      <class name="com.elal.test.SearchingByDefferentDestinations">
+        <test-method status="PASS" signature="originAndDestinationAreNotMatched(java.lang.String, java.lang.String)[pri:1, instance:com.elal.test.SearchingByDefferentDestinations@5b275dab]" name="originAndDestinationAreNotMatched" duration-ms="18661" started-at="2018-10-20T11:35:10Z" description="The goal of the test is to check tickets when Origin and Destanation are not matched and type of trip is **Round**Expected resul:Should be shown Outbound and Inbound according with entered directions" data-provider="dp" finished-at="2018-10-20T11:35:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[====Start browser====]]>
@@ -58,8 +46,20 @@
               <![CDATA[======Stop browser======]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testOneAdult9Children -->
-        <test-method status="PASS" signature="testAddOneAdult()[pri:1, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testAddOneAdult" duration-ms="19885" started-at="2018-10-20T09:10:19Z" description="TC1**The goal of the test is to check adding one adult to ticket,By default there is one adult added once site is open:Expected results Passengers amount is updated to 2**" finished-at="2018-10-20T09:10:38Z">
+        </test-method> <!-- originAndDestinationAreNotMatched -->
+        <test-method status="PASS" signature="originAndDestinationAreNotMatched(java.lang.String, java.lang.String)[pri:1, instance:com.elal.test.SearchingByDefferentDestinations@5b275dab]" name="originAndDestinationAreNotMatched" duration-ms="16981" started-at="2018-10-20T11:35:29Z" description="The goal of the test is to check tickets when Origin and Destanation are not matched and type of trip is **Round**Expected resul:Should be shown Outbound and Inbound according with entered directions" data-provider="dp" finished-at="2018-10-20T11:35:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tel]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[====Start browser====]]>
@@ -68,8 +68,20 @@
               <![CDATA[======Stop browser======]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testAddOneAdult -->
-        <test-method status="PASS" signature="testAdd5Adults()[pri:2, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testAdd5Adults" duration-ms="18420" started-at="2018-10-20T09:10:38Z" description="TC2**The goal of the test is to check adding 4 adults to ticket:Expected results Passengers amount is updated to 5" finished-at="2018-10-20T09:10:57Z">
+        </test-method> <!-- originAndDestinationAreNotMatched -->
+        <test-method status="PASS" signature="originAndDestinationAreNotMatched(java.lang.String, java.lang.String)[pri:1, instance:com.elal.test.SearchingByDefferentDestinations@5b275dab]" name="originAndDestinationAreNotMatched" duration-ms="17897" started-at="2018-10-20T11:35:46Z" description="The goal of the test is to check tickets when Origin and Destanation are not matched and type of trip is **Round**Expected resul:Should be shown Outbound and Inbound according with entered directions" data-provider="dp" finished-at="2018-10-20T11:36:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Berlin]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[====Start browser====]]>
@@ -78,48 +90,8 @@
               <![CDATA[======Stop browser======]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testAdd5Adults -->
-        <test-method status="PASS" signature="testAdd9Adults()[pri:3, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testAdd9Adults" duration-ms="18241" started-at="2018-10-20T09:10:57Z" description="TC3**The goal of the test is to check adding 9 adults to ticket:Expected results**Error message shown,Max adulst is 9" finished-at="2018-10-20T09:11:15Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====Start browser====]]>
-            </line>
-            <line>
-              <![CDATA[======Stop browser======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testAdd9Adults -->
-        <test-method status="PASS" signature="testRemove3Adults()[pri:4, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testRemove3Adults" duration-ms="18034" started-at="2018-10-20T09:11:15Z" description="TC4**The goal of the test is to check removing of 3 adults from a  ticket:Before will be add 4 adults and then remove 1Expected results Passengers amount is updated to 4" finished-at="2018-10-20T09:11:33Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====Start browser====]]>
-            </line>
-            <line>
-              <![CDATA[======Stop browser======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testRemove3Adults -->
-        <test-method status="PASS" signature="testRemoveAllAdults()[pri:5, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testRemoveAllAdults" duration-ms="9641" started-at="2018-10-20T09:11:33Z" description="TC5**The goal of the test is to check remove all adults from a  ticket:Expected results**Error message shown,Choose Adult Tickets" finished-at="2018-10-20T09:11:43Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====Start browser====]]>
-            </line>
-            <line>
-              <![CDATA[======Stop browser======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testRemoveAllAdults -->
-        <test-method status="PASS" signature="testaddAdult_Children()[pri:6, instance:com.elal.test.AddingRemovingPassengers@4501b7af]" name="testaddAdult_Children" duration-ms="18702" started-at="2018-10-20T09:11:43Z" description="TC6**The goal of the test is to check adding to  adults 2 children,Total amount of children and Adults should 7" finished-at="2018-10-20T09:12:02Z">
-          <reporter-output>
-            <line>
-              <![CDATA[====Start browser====]]>
-            </line>
-            <line>
-              <![CDATA[======Stop browser======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testaddAdult_Children -->
-      </class> <!-- com.elal.test.AddingRemovingPassengers -->
+        </test-method> <!-- originAndDestinationAreNotMatched -->
+      </class> <!-- com.elal.test.SearchingByDefferentDestinations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

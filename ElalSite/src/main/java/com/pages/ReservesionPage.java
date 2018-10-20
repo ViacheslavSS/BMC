@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 public class ReservesionPage {
 	@FindBy(className = "NumOfPass")
 	WebElement NumOfPassengers;
-	
 
 	// *********************************************************************
 	@FindBy(className = "city")
@@ -15,16 +14,30 @@ public class ReservesionPage {
 	WebElement cityInbound;
 
 	// *********************************************************************
-	
-	public int getNumOfPass(){
-		//System.out.println(NumOfPassengers.getAttribute(getNumOfPass()));
-		int amount =Integer.parseInt(NumOfPassengers.getText().toString());
+
+	public int getNumOfPass() {
+		// System.out.println(NumOfPassengers.getAttribute(getNumOfPass()));
+		int amount = Integer.parseInt(NumOfPassengers.getText().toString());
 		return amount;
-		
+
 	}
-	public String getOutboundDirection() {
-		return cityOutbound.getText().toString();
+
+	public Boolean getOutboundDirection() {
+		if (cityOutbound.getText().toString().contains("Tel Aviv Yafo to Buffalo")) {
+			return true;
+		}
+
+		else if (cityOutbound.getText().toString().contains("Buffalo to Tel Aviv Yafo")) {
+			return true;
+
+		}
 		
+		else if (cityOutbound.getText().toString().contains("Tel Aviv Yafo to Berlin")) {
+			return true;
+
+		}
+
+		return false;
 	}
 
 	public String getIntboundDirection() {
